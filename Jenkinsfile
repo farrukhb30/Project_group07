@@ -7,13 +7,14 @@ pipeline{
         stage('Build'){
             steps{
                 sh 'mvn clean compile'
+                sh 'mvn package'
             }
         }
         stage('Test'){
             steps{
                 sh 'mvn verify'
                 sh 'mvn test'
-            }
+                 }
         }
     }
 }
