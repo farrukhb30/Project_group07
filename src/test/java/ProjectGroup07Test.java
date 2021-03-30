@@ -41,8 +41,8 @@ class ProjectGroup07Test {
     @DisplayName("When translate then correct")
     public void whenTranslate_thenCorrect() {
         UnicodeEscaper ue = UnicodeEscaper.above(0);
-        String result = ue.translate("ABCD");
+        String result = ue.translate(ProjectGroup07.mainMethod("ABCD"));
 
-        assertEquals("\\u0041\\u0042\\u0043\\u0044", result);
+        assertEquals("\\u0048\\u0065\\u006C\\u006C\\u006F\\u0020\\u0041\\u0042\\u0043\\u0044", result);
     }
 }
