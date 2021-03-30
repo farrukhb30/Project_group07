@@ -45,4 +45,12 @@ class ProjectGroup07Test {
 
         assertEquals("\\u0048\\u0065\\u006C\\u006C\\u006F\\u0020\\u0041\\u0042\\u0043\\u0044", result);
     }
+
+    @Test
+    void testDockerAutoPush() {
+        ProjectGroup07 projectGroup07 = new ProjectGroup07();
+        String expected = "Hello Docker";
+        assertEquals(expected,projectGroup07.mainMethod("Docker"));
+
+    }
 }
