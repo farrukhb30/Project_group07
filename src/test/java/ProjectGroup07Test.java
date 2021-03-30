@@ -1,3 +1,4 @@
+import com.google.common.base.CharMatcher;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
@@ -13,4 +14,17 @@ class ProjectGroup07Test {
         String expected = "Hello Jessica";
         assertEquals(expected, projectGroup07.mainMethod("Jessica"));
     }
+
+    @Test
+    @DisplayName("Test extern method")
+    void testExternMethod(){
+
+        ProjectGroup07 projectGroup07 = new ProjectGroup07();
+
+        String expected = "Hello Jessica";
+
+        assertEquals(expected, projectGroup07.mainMethod(CharMatcher.whitespace().trimFrom("   Jessica    ")));
+    }
+
+
 }
