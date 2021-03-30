@@ -6,13 +6,12 @@ pipeline{
     stages{
         stage('Build'){
             steps{
-                echo 'Hello World'
-                sh 'java --version'
                 sh 'mvn clean compile'
             }
         }
         stage('Test'){
             steps{
+                sh 'mvn verify'
                 sh 'mvn test'
             }
         }
