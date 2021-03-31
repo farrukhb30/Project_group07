@@ -5,6 +5,7 @@ public class ProjectGroup07 {
     public static void main(String[] args) {
 
        ProjectGroup07.mainMethod("Tahar");
+        System.out.println("This is the Docker testing!!!!");
     }
 
     static String mainMethod(String name){
