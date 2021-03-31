@@ -80,7 +80,7 @@
                             <archiveBaseDirectory>${project.basedir}</archiveBaseDirectory>
                             <archive>
                                 <manifest>
-                                    <mainClass>org.example.executable.ExecutableMavenJar</mainClass>
+                                    <mainClass>org.example.executable.ProjectGroup07</mainClass>
                                 </manifest>
                             </archive>
                             <descriptorRefs>
