@@ -10,25 +10,10 @@
 
     <dependencies>
         <dependency>
-            <groupId>org.apache.commons</groupId>
-            <artifactId>commons-text</artifactId>
-            <version>1.9</version>
-        </dependency>
-        <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter</artifactId>
             <version>RELEASE</version>
             <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>com.google.guava</groupId>
-            <artifactId>guava</artifactId>
-            <version>30.1.1-jre</version>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.commons</groupId>
-            <artifactId>commons-lang3</artifactId>
-            <version>3.9</version>
         </dependency>
     </dependencies>
 
@@ -46,7 +31,7 @@
                                 <goal>copy-dependencies</goal>
                             </goals>
                             <configuration>
-                                <outputDirectory>$/target</outputDirectory>
+                                <outputDirectory>${project.build.directory}/libs/guava-30.1.1-jre.jar</outputDirectory>
                                 <overWriteReleases>false</overWriteReleases>
                                 <overWriteSnapshots>false</overWriteSnapshots>
                                 <overWriteIfNewer>true</overWriteIfNewer>
