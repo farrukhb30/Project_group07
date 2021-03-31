@@ -42,7 +42,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>ProjectGroup07</mainClass>
+                                <mainClass>ProjectGroup07</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
