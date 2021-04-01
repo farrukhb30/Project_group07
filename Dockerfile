@@ -1,7 +1,6 @@
 FROM adoptopenjdk:11-jre
-WORKDIR /
-COPY ~/.m2/repository/com/google/guava/14.0.1/guava.jar /
+WORKDIR /target
+ADD ./target/libs/guava-30.1.1-jre.jar /target/libs/guava-30.1.1-jre.jar
 ADD ./target/ProjectGroup07-1.0-SNAPSHOT.jar ProjectGroup07-1.0-SNAPSHOT.jar
 EXPOSE 8081
-CMD java -jar /ProjectGroup07-1.0-SNAPSHOT.jar
-CMD ["sh run.sh", "/guava.jar"]
+CMD java -jar /target/ProjectGroup07-1.0-SNAPSHOT.jar
