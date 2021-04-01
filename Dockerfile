@@ -1,4 +1,4 @@
-FROM openjdk:11-jre-slim-buster
+FROM openjdk:11-jre-buster
 WORKDIR /target
 ADD ./target/libs/guava-30.1.1-jre.jar /target/libs/guava-30.1.1-jre.jar
 ADD ./target/libs/commons-lang3-3.9.jar /target/libs/commons-lang3-3.9.jar
