@@ -15,7 +15,7 @@ class ProjectGroup07Test {
     void testMainMethod(){
         ProjectGroup07 projectGroup07 = new ProjectGroup07();
         String expected = "Hello Jessica";
-        assertEquals(expected, projectGroup07.mainMethod("Jessica"));
+        assertEquals(expected, projectGroup07.greetings("Jessica"));
     }
 
     @Test
@@ -26,14 +26,14 @@ class ProjectGroup07Test {
 
         String expected = "Hello Jessica";
 
-        assertEquals(expected, projectGroup07.mainMethod(CharMatcher.whitespace().trimFrom("   Jessica    ")));
+        assertEquals(expected, projectGroup07.greetings(CharMatcher.whitespace().trimFrom("   Jessica    ")));
     }
     @Test
     @DisplayName("Test Capitalletter")
     void testCapitalletter() {
         ProjectGroup07 projectGroup07 = new ProjectGroup07();
         String expected = "Hello Jessica";
-        String actual = projectGroup07.mainMethod(StringUtils.capitalize(" jessica "));
+        String actual = projectGroup07.greetings(StringUtils.capitalize(" jessica "));
 
 
     }
@@ -41,7 +41,7 @@ class ProjectGroup07Test {
     @DisplayName("When translate then correct")
     public void whenTranslate_thenCorrect() {
         UnicodeEscaper ue = UnicodeEscaper.above(0);
-        String result = ue.translate(ProjectGroup07.mainMethod("ABCD"));
+        String result = ue.translate(ProjectGroup07.greetings("ABCD"));
 
         assertEquals("\\u0048\\u0065\\u006C\\u006C\\u006F\\u0020\\u0041\\u0042\\u0043\\u0044", result);
     }
@@ -50,7 +50,7 @@ class ProjectGroup07Test {
     void testDockerAutoPush() {
         ProjectGroup07 projectGroup07 = new ProjectGroup07();
         String expected = "Hello Docker";
-        assertEquals(expected,projectGroup07.mainMethod("Docker"));
+        assertEquals(expected,projectGroup07.greetings("Docker"));
 
     }
 }
