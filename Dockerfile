@@ -5,4 +5,3 @@ ADD ./target/ProjectGroup07-1.0-SNAPSHOT.jar ProjectGroup07-1.0-SNAPSHOT.jar
 EXPOSE 8081
 CMD java -jar /ProjectGroup07-1.0-SNAPSHOT.jar
 CMD ["sh run.sh", "/guava.jar"]
-
